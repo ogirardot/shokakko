@@ -1,0 +1,29 @@
+baseURL = 'https://www.shokakko.com/'
+languageCode = 'en-us'
+title = "Shokakko"
+createdBy = "Olivier Girardot"
+
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = true
+    path = "github.com/brianreumere/plague"  # Theme
+
+[params]
+  siteHeaderText = "Olivier Girardot's Tech Blog"
+  siteFooterText = "Powered by [Hugo](https://gohugo.io/) and the [plague](https://github.com/brianreumere/plague) theme."
+  [params.hcard]
+    fullName = "Olivier Girardot"
+    showLocation = false
+    city = "Paris"
+    region = "IDF"
+    country = "FR"
+
+    social = [
+      { platform = "github", identity = "ogirardot", url_pattern = "https://github.com/%s" },
+      { platform = "linkedin", identity = "oliviergirardot", url_pattern = "https://www.linkedin.com/in/%s" },
+      { platform = "website", identity = "shokakko", url_pattern = "https://www.shokakko.com" },
+      { platform = "bluesky", identity = "ogirardot", url_pattern = "https://bsky.app/profile/%s" }
+    ]
+
