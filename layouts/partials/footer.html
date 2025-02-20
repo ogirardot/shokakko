@@ -1,0 +1,16 @@
+<div class="footer-container">
+    <div class="h-card bio">
+        {{- partial "hcard.html" . -}}
+    </div>
+    {{- with .Site.Params.SiteFooterText -}}
+    <div class="footer-text footer-right">
+        <p>
+            {{ . | markdownify }}
+        </p>
+    </div>
+    {{- end -}}
+</div>
+<div class="h-card social">
+    {{ partial "social.html" . -}}
+</div>
+<script defer async src="https://tracker.blogtally.com/blogtally.min.js" data-site="407d5903-3398-4e8b-afae-cdbd24bf6da5" data-link-tracking="true" ></script>
