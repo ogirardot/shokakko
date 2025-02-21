@@ -4,9 +4,1017 @@
     <title>Shokakko</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on Shokakko</description>
-    <generator>Hugo 0.144.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2025 09:40:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Object oriented programming deemed irrelevant</title>
+      <link>http://localhost:1313/posts/2025-02-20-object-oriented-programming-deemed-irrelevant/</link>
+      <pubDate>Thu, 20 Feb 2025 09:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-02-20-object-oriented-programming-deemed-irrelevant/</guid>
+      <description>&lt;p style=&#34;text-align: justify&#34;&gt;&#xA;  I&#39;ve been coding since 2006, during this time I&#39;ve seen multiple trends &amp; technologies emerge, rise and fall - nowadays the elephant in the room is the bad press around OOP languages the likes of Java, C#, C++.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Pandas to Apache Spark’s Dataframe</title>
+      <link>http://localhost:1313/posts/2015-07-31-from-pandas-to-apache-sparks-dataframe/</link>
+      <pubDate>Fri, 31 Jul 2015 21:04:36 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2015-07-31-from-pandas-to-apache-sparks-dataframe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RDDs are the new bytecode of Apache Spark</title>
+      <link>http://localhost:1313/posts/2015-05-29-rdds-are-the-new-bytecode-of-apache-spark/</link>
+      <pubDate>Fri, 29 May 2015 20:09:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2015-05-29-rdds-are-the-new-bytecode-of-apache-spark/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  With the Apache Spark 1.3 release the Dataframe API for Spark SQL got introduced, for those of you who missed the big announcements, I&#39;d recommend to read the article : &lt;a title=&#34;Introducing Dataframes in Spark for Large Scale Data Science&#34; href=&#34;https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html&#34; target=&#34;_blank&#34;&gt;Introducing Dataframes in Spark for Large Scale Data Science&lt;/a&gt; from the Databricks blog. Dataframes are very popular among data scientists, personally I&#39;ve mainly been using them with the great Python library &lt;a title=&#34;Pandas&#34; href=&#34;http://pandas.pydata.org&#34; target=&#34;_blank&#34;&gt;Pandas&lt;/a&gt; but there are many examples in R (originally) and Julia.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Changing Spark’s default java serialization to Kryo</title>
+      <link>http://localhost:1313/posts/2015-01-09-changing-sparks-default-java-serialization-to-kryo/</link>
+      <pubDate>Fri, 09 Jan 2015 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2015-01-09-changing-sparks-default-java-serialization-to-kryo/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Apache Spark&#39;s default serialization relies on Java with the default &lt;em&gt;readObject(...) &lt;/em&gt;and &lt;em&gt;writeObject(...) &lt;/em&gt; methods for all &lt;strong&gt;Serializable &lt;/strong&gt;classes. This is a very fine default behavior as long as you don&#39;t rely on it too much...&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Try Apache Spark’s shell using Docker</title>
+      <link>http://localhost:1313/posts/2014-12-18-try-apache-sparks-shell-using-docker/</link>
+      <pubDate>Thu, 18 Dec 2014 14:41:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-12-18-try-apache-sparks-shell-using-docker/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Ever wanted to try out &lt;a title=&#34;Apache Spark&#34; href=&#34;https://spark.apache.org/&#34;&gt;Apache Spark&lt;/a&gt; without actually having to install anything ? Well if you&#39;ve got &lt;a title=&#34;Docker&#34; href=&#34;https://www.docker.com/&#34;&gt;Docker&lt;/a&gt;, I&#39;ve got a christmas present for you, a Docker image you can pull to try and run Spark commands in the Spark shell REPL. The image has been pushed to the &lt;a href=&#34;https://registry.hub.docker.com/u/ogirardot/spark-docker-shell&#34;&gt;Docker Hub here&lt;/a&gt; and can be easily pulled using Docker.&#xA;&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  So exactly what is this image, and how can I use it ?&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apache Spark : Memory management and Graceful degradation</title>
+      <link>http://localhost:1313/posts/2014-12-11-apache-spark-memory-management-and-graceful-degradation/</link>
+      <pubDate>Thu, 11 Dec 2014 13:30:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-12-11-apache-spark-memory-management-and-graceful-degradation/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Many of the concepts of Apache Spark are pretty straightforward and easy to understand, however some lucky few can be badly misunderstood. One of the greatest misunderstanding of all is the fact that some still believe that &amp;#8220;&lt;em&gt;Spark is only relevant with datasets that can fit into memory, otherwise it will crash&amp;#8221;&lt;/em&gt;.&#xA;&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  This is an understanding mistake, Spark being easily associated as a &amp;#8220;Hadoop using RAM more efficiently&amp;#8221;, but it still is a mistake.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apache Spark : l’importance du broadcast</title>
+      <link>http://localhost:1313/posts/2014-11-27-apache-spark-limportance-du-broadcast/</link>
+      <pubDate>Thu, 27 Nov 2014 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-11-27-apache-spark-limportance-du-broadcast/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dagger and Play 2 Java</title>
+      <link>http://localhost:1313/posts/2014-07-28-dagger-and-play-2-java/</link>
+      <pubDate>Mon, 28 Jul 2014 16:29:42 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-07-28-dagger-and-play-2-java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How to remove scaladoc generation from Play 2.2.x Production dist</title>
+      <link>http://localhost:1313/posts/2014-06-17-how-to-remove-scaladoc-generation-from-play-2-2-x-production-dist/</link>
+      <pubDate>Tue, 17 Jun 2014 16:12:27 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-06-17-how-to-remove-scaladoc-generation-from-play-2-2-x-production-dist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Timeoff 2014 @ Lateral Thoughts</title>
+      <link>http://localhost:1313/posts/2014-04-14-timeoff-2014-lateral-thoughts/</link>
+      <pubDate>Mon, 14 Apr 2014 20:44:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2014-04-14-timeoff-2014-lateral-thoughts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Highlighting field in memory-based Lucene indexes</title>
+      <link>http://localhost:1313/posts/2013-06-24-highlighting-field-in-memory-based-lucene-indexes/</link>
+      <pubDate>Mon, 24 Jun 2013 21:57:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-06-24-highlighting-field-in-memory-based-lucene-indexes/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  I&#39;m using more and more Lucene these days, and getting in depth on a few subjects, today i&#39;m going to talk to you about how to handle the new Highlighting features available with Lucene 4.1.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to test and understand custom analyzers in Lucene</title>
+      <link>http://localhost:1313/posts/2013-06-20-how-to-test-and-understand-custom-analyzers-in-lucene/</link>
+      <pubDate>Thu, 20 Jun 2013 20:41:05 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-06-20-how-to-test-and-understand-custom-analyzers-in-lucene/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  I&#39;ve began to work more and more with the great &amp;#8220;low-level&amp;#8221; library &lt;a href=&#34;https://lucene.apache.org&#34;&gt;Apache Lucene&lt;/a&gt; created by Doug Cutting. For those of you that may not know, Lucene is the indexing and searching library used by great entreprise search servers like Apache Solr and &lt;a href=&#34;elasticsearch.org&#34;&gt;Elasticsearch&lt;/a&gt;.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Book review : ElasticSearch Server by Rafal Kuc, Marek Rogozinski</title>
+      <link>http://localhost:1313/posts/2013-06-17-book-review-elasticsearch-server-by-rafal-kuc-marek-rogozinski/</link>
+      <pubDate>Mon, 17 Jun 2013 19:48:22 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-06-17-book-review-elasticsearch-server-by-rafal-kuc-marek-rogozinski/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elasticsearch is the way</title>
+      <link>http://localhost:1313/posts/2013-03-12-elasticsearch-is-the-way/</link>
+      <pubDate>Tue, 12 Mar 2013 20:34:05 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-03-12-elasticsearch-is-the-way/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Don&#39;t get me wrong, i love &lt;a title=&#34;Solr&#34; href=&#34;http://lucene.apache.org/solr/&#34;&gt;Apache Solr&lt;/a&gt;, i think it&#39;s a wonderful project and the versions 4.x are definitely something you should check out when building a proper search engine.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reste à ta place et fais ce qu’on te dit.</title>
+      <link>http://localhost:1313/posts/2013-02-01-reste-a-ta-place-et-fais-ce-quon-te-dit/</link>
+      <pubDate>Fri, 01 Feb 2013 17:15:53 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-02-01-reste-a-ta-place-et-fais-ce-quon-te-dit/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Je ne suis pas le plus aguerri des vétérans, et je m&#39;en rend compte encore assez souvent pour savoir que j&#39;ai encore des &lt;em&gt;sempaïs &lt;/em&gt;dans plus d&#39;un domaine (pas que technique) dont certains avec qui j&#39;ai la chance de travailler, même si ce n&#39;est pas tout le temps au jour le jour.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sharing PyPi/Maven dependency data</title>
+      <link>http://localhost:1313/posts/2013-01-31-sharing-pypimaven-dependency-data/</link>
+      <pubDate>Thu, 31 Jan 2013 10:00:08 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-01-31-sharing-pypimaven-dependency-data/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  As time is always running out, i don&#39;t think i&#39;ll have the time in a while to work again on the data I collected for the last three articles, &lt;a title=&#34;Going offline with Maven&#34; href=&#34;http://ogirardot.wordpress.com/2013/01/14/going-offline-with-maven/&#34;&gt;Going offline with Maven&lt;/a&gt;, &lt;a title=&#34;State of the maven/java dependency graph&#34; href=&#34;http://ogirardot.wordpress.com/2013/01/11/state-of-the-mavenjava-dependency-graph/&#34;&gt;State of the Maven/Java dependency graph&lt;/a&gt; and &lt;a title=&#34;State of the PyPi/Python dependency graph&#34; href=&#34;http://ogirardot.wordpress.com/2013/01/05/state-of-the-pythonpypi-dependency-graph/&#34;&gt;State of the PyPi/Python dependency graph&lt;/a&gt;.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Going offline with Maven</title>
+      <link>http://localhost:1313/posts/2013-01-14-going-offline-with-maven/</link>
+      <pubDate>Mon, 14 Jan 2013 19:16:41 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-01-14-going-offline-with-maven/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  At &lt;a title=&#34;LT&#34; href=&#34;http://www.lateral-thoughts.com&#34;&gt;Lateral-Thoughts&lt;/a&gt;, we organize at least once a year, what we call a &amp;#8220;Timeoff&amp;#8221; where we get together in a nice place and hack on what we want. It can be a learning period or a &lt;a title=&#34;Startup Weekend&#34; href=&#34;http://startupweekend.org/&#34;&gt;startup weekend&lt;/a&gt;-like event where we hack on a product/idea. &lt;a title=&#34;We should always work like that (French)&#34; href=&#34;http://ogirardot.wordpress.com/2012/09/13/on-devrait-toujours-travailler-comme-ca-hackatonlt/&#34;&gt;Last time&lt;/a&gt; it was in a nice house in &lt;a title=&#34;Gérande, Loire Atlantique, France&#34; href=&#34;http://goo.gl/maps/QVqpu&#34;&gt;Guérande&lt;/a&gt; where we had everything we needed, &lt;strong&gt;internet access&lt;/strong&gt;, rooms, tables, lots of space, an indoor swimming pool and a barbecue !&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>State of the Maven/Java dependency graph</title>
+      <link>http://localhost:1313/posts/2013-01-11-state-of-the-mavenjava-dependency-graph/</link>
+      <pubDate>Fri, 11 Jan 2013 12:00:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-01-11-state-of-the-mavenjava-dependency-graph/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  So here it comes, the second part of a three part articles on dependencies in different world, &lt;a title=&#34;State of PyPi dependencies&#34; href=&#34;http://ogirardot.wordpress.com/2013/01/05/state-of-the-pythonpypi-dependency-graph/&#34;&gt;the first part was about Python/PyPi dependencies&lt;/a&gt; and considering the size of the graph : &lt;strong&gt;20661 Nodes, 14047 Edges, &lt;/strong&gt; I was able to &lt;a title=&#34;PyPi dependencies interactive graph&#34; href=&#34;http://ssaboum.github.com/meta-deps&#34;&gt;show you the graph in an interactive javascript app&lt;/a&gt; using &lt;a title=&#34;SigmaJS&#34; href=&#34;http://sigmajs.org/&#34;&gt;SigmaJS&lt;/a&gt;. But this times it&#39;s different, after extracting the metadata from &lt;a title=&#34;Maven&#34; href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt; repositories, the raw data file generated weights &lt;strong&gt;273M&lt;/strong&gt;, and the size of the whole directed dependency graph is &lt;strong&gt;186 384 Nodes and 1 229 083 Edges&lt;/strong&gt;, in other words, it&#39;s going to be tough to show you the whole graph interactively but the &lt;em&gt;raw data&lt;/em&gt;, the &lt;em&gt;graph file&lt;/em&gt; and the &lt;em&gt;Gephi file&lt;/em&gt; are available on the &lt;a title=&#34;MetaDeps&#34; href=&#34;http://github.com/ogirardot/meta-deps&#34;&gt;GitHub project&lt;/a&gt;.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>State of the Python/PyPi dependency graph</title>
+      <link>http://localhost:1313/posts/2013-01-05-state-of-the-pythonpypi-dependency-graph/</link>
+      <pubDate>Sat, 05 Jan 2013 19:28:39 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2013-01-05-state-of-the-pythonpypi-dependency-graph/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  I usually work in Java/Maven environment, so when I explain to people that Python also has a package manager - a bit less heavy than maven - and that it&#39;s working pretty well, I always have to answer the same question : &amp;#8220;Ok, but &lt;strong&gt;how does it solve the transitive dependency hell&lt;/strong&gt; ?&amp;#8221;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Year’s Python Meme 2012</title>
+      <link>http://localhost:1313/posts/2012-12-28-new-years-python-meme-2012/</link>
+      <pubDate>Fri, 28 Dec 2012 21:38:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-12-28-new-years-python-meme-2012/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agora : Automatiser la démocratie dans une NoSSII</title>
+      <link>http://localhost:1313/posts/2012-12-16-agora-automatiser-la-democratie-dans-une-nossii/</link>
+      <pubDate>Sun, 16 Dec 2012 14:13:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-12-16-agora-automatiser-la-democratie-dans-une-nossii/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  c&#39;est l&#39;histoire d&#39;un concept, vieux comme le monde, la démocratie.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La vie de startup</title>
+      <link>http://localhost:1313/posts/2012-09-21-la-vie-de-startup/</link>
+      <pubDate>Fri, 21 Sep 2012 21:21:23 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-09-21-la-vie-de-startup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pourquoi venir à la présentation “Architecture CQRS et performance avec Django” au #pyconfr</title>
+      <link>http://localhost:1313/posts/2012-09-14-pourquoi-venir-a-la-presentation-architecture-cqrs-et-performance-avec-django-au-pyconfr/</link>
+      <pubDate>Fri, 14 Sep 2012 10:53:42 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-09-14-pourquoi-venir-a-la-presentation-architecture-cqrs-et-performance-avec-django-au-pyconfr/</guid>
+      <description>&lt;p&gt;Bon déjà, c&amp;rsquo;est facile, c&amp;rsquo;est moi qui la ferait donc ça sera forcement intéressant (au moins un peu !), ensuite plusieurs points.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On devrait toujours travailler comme ça #hackathon LT</title>
+      <link>http://localhost:1313/posts/2012-09-13-on-devrait-toujours-travailler-comme-ca-hackatonlt/</link>
+      <pubDate>Thu, 13 Sep 2012 10:09:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-09-13-on-devrait-toujours-travailler-comme-ca-hackatonlt/</guid>
+      <description>&lt;p&gt;Voilà le #hackathonLT “été 2012” est fini pour moi, c&amp;rsquo;était bien sympa. Difficile d&amp;rsquo;arriver à expliquer à tout le monde l&amp;rsquo;ambiance ou l&amp;rsquo;organisation, vu que le but était de ne pas vraiment en avoir&amp;hellip; mais pour faire simple imaginer ça :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>J’y vais… j’y vais pas…</title>
+      <link>http://localhost:1313/posts/2012-07-21-jy-vais-jy-vais-pas/</link>
+      <pubDate>Fri, 20 Jul 2012 22:28:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-07-21-jy-vais-jy-vais-pas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Le Cloud n’est pas la martingale</title>
+      <link>http://localhost:1313/posts/2012-06-08-le-cloud-nest-pas-la-martingale/</link>
+      <pubDate>Fri, 08 Jun 2012 16:01:45 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-06-08-le-cloud-nest-pas-la-martingale/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Je vois de plus en plus de devs et autre afficionados technolo-geek commencer à ne jurer que par le cloud, alors à défaut de présenter une vision partiale et totalitairement contre, ce que je ne suis pas, j&#39;aimerais bien tempéré un peu ces ardeurs.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Snow leopard and Qt/PyQt 4.8.x won’t work</title>
+      <link>http://localhost:1313/posts/2012-01-17-snow-leopard-and-qtpyqt-4-8-x-wont-work/</link>
+      <pubDate>Tue, 17 Jan 2012 21:52:19 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-01-17-snow-leopard-and-qtpyqt-4-8-x-wont-work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Handle Celery-dependent tests in Django and with django-jenkins</title>
+      <link>http://localhost:1313/posts/2012-01-15-handle-celery-dependent-tests-in-django-and-with-django-jenkins/</link>
+      <pubDate>Sun, 15 Jan 2012 16:45:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2012-01-15-handle-celery-dependent-tests-in-django-and-with-django-jenkins/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  So in your life, one of these days, you&#39;re going to realize you need tests, and that &amp;#8220;maybe&amp;#8221; you also need to test components that depend on several Celery tasks.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>La puissance et le contrôle</title>
+      <link>http://localhost:1313/posts/2011-09-24-la-puissance-et-le-controle/</link>
+      <pubDate>Sat, 24 Sep 2011 10:45:19 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-09-24-la-puissance-et-le-controle/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  En développement, comme dans beaucoup d&#39;arts martiaux, on peut devenir fort assez rapidement. On peut se fixer des objectifs (une ceinture, une victoire / maitriser une technologie ou réaliser un projet perso) et les atteindre rapidement selon le language, le maître et l&#39;implication qu&#39;on y met.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IncidentsRATP – IncidentsTransports est publié</title>
+      <link>http://localhost:1313/posts/2011-06-08-incidentsratp-incidentstransports-est-publie/</link>
+      <pubDate>Wed, 08 Jun 2011 18:16:14 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-06-08-incidentsratp-incidentstransports-est-publie/</guid>
+      <description>&lt;p&gt;Voilà c&amp;rsquo;est fait, après maintes péripéties et une attente longue je l&amp;rsquo;avoue, le projet est enfin publié en AGPL v3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Etat de fait et fatalité</title>
+      <link>http://localhost:1313/posts/2011-05-31-etat-de-fait-et-fatalite/</link>
+      <pubDate>Tue, 31 May 2011 19:10:55 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-05-31-etat-de-fait-et-fatalite/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Un état de fait m&#39;énerve, il m&#39;énerve d&#39;une part parce que dans d&#39;autres domaines professionnels, il n&#39;est pas aussi exacerbé, et d&#39;autre part parce que je pense que la tendance s&#39;accélère.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Should i really learn Java ?</title>
+      <link>http://localhost:1313/posts/2011-05-01-should-i-really-learn-java/</link>
+      <pubDate>Sun, 01 May 2011 16:58:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-05-01-should-i-really-learn-java/</guid>
+      <description>&lt;p&gt;So i&amp;rsquo;ve been a professional Java developper for a few years now, and the question seems interesting to me. &lt;strong&gt;Should, let&amp;rsquo;s say a student, really learn Java even if he does not want to do “Enterprise applications” ?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Short answer, Yes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TOR et HADOPI</title>
+      <link>http://localhost:1313/posts/2011-03-28-tor-et-hadopi/</link>
+      <pubDate>Mon, 28 Mar 2011 11:00:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-28-tor-et-hadopi/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Juste pour faire un petit point autour de la HADOPI et plus précisément de la position de la HADOPI envers les proxy, et plus spécifiquement de la distribution des proxy comme le fait &lt;a href=&#34;http://www.torproject.org/&#34; target=&#34;_blank&#34;&gt;TOR&lt;/a&gt;.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to be a happy programmer (with Python) ? 2/3</title>
+      <link>http://localhost:1313/posts/2011-03-25-how-to-be-a-happy-programmer-with-python-23/</link>
+      <pubDate>Fri, 25 Mar 2011 21:41:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-25-how-to-be-a-happy-programmer-with-python-23/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  In the series of the Python &amp;#8220;features&amp;#8221; that makes me happy &lt;a title=&#34;how-to-be-a-happy-programmer-with-python&#34; href=&#34;http://www.readtfb.net/2011/03/18/how-to-be-a-happy-programmer-with-python-13/&#34; target=&#34;_blank&#34;&gt;last time&lt;/a&gt; i began with two concepts, the &lt;em&gt;with&lt;/em&gt; statement and the &lt;em&gt;list comprehensions&lt;/em&gt;, now i&#39;m going to talk about Multiple assignments and the import aliases.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using TOR with Python</title>
+      <link>http://localhost:1313/posts/2011-03-25-using-tor-with-python/</link>
+      <pubDate>Fri, 25 Mar 2011 21:12:59 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-25-using-tor-with-python/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  There are many occasion where you may be limited using your own IP address, i will obviously only refer myself to &amp;#8220;rightful&amp;#8221; cases where you need to use different IP address in very short lapse of time. Let&#39;s say you want to test your website localization functionality, or just access it using many different IP address and see how the system deals with it.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to be a happy programmer (with Python) ? 1/3</title>
+      <link>http://localhost:1313/posts/2011-03-18-how-to-be-a-happy-programmer-with-python-13/</link>
+      <pubDate>Fri, 18 Mar 2011 21:04:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-18-how-to-be-a-happy-programmer-with-python-13/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  I&#39;ve just watched &lt;a title=&#34;Hillary Mason&#34; href=&#34;http://pycon.blip.tv/file/4878710/&#34; target=&#34;_blank&#34;&gt;Hillary Mason&#39;s talk in Pycon 2011&lt;/a&gt; : http://pycon.blip.tv/file/4878710/&lt;br /&gt; And that got me thinking about all the python constructs that makes my day better, and i decided to make a list of them and their meaning.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to debug Django using the Python Debugger PDB</title>
+      <link>http://localhost:1313/posts/2011-03-15-how-to-debug-django-using-the-python-debugger-pdb/</link>
+      <pubDate>Tue, 15 Mar 2011 20:20:39 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-15-how-to-debug-django-using-the-python-debugger-pdb/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Even if that seems common sense, i found out that there&#39;s not that much sources that explains how to use &lt;a title=&#34;Python Debugger&#34; href=&#34;http://docs.python.org/library/pdb.html&#34; target=&#34;_blank&#34;&gt;PDB&lt;/a&gt; with Django&#39;s bundle webserver.  So here we go, let&#39;s say you have some treatment like that :&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[IncidentsRATP] Suite et bientôt fin</title>
+      <link>http://localhost:1313/posts/2011-03-10-incidentsratp-suite-et-bientot-fin/</link>
+      <pubDate>Thu, 10 Mar 2011 12:53:04 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-03-10-incidentsratp-suite-et-bientot-fin/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  J&#39;avais déjà publié à la fois &lt;a title=&#34;[IncidentsRATP] La lettre&#34; href=&#34;http://www.readtfb.net/2011/02/20/incidentsratp-la-lettre/&#34; target=&#34;_blank&#34;&gt;la lettre de la RATP&lt;/a&gt; me mettant en demeure de fermer le site &lt;a title=&#34;IncidentsTransports&#34; href=&#34;http://www.incidents-transports.com&#34; target=&#34;_blank&#34;&gt;incidents-ratp.com&lt;/a&gt; et &lt;a title=&#34;IncidentsRATP&#34; href=&#34;http://www.readtfb.net/2011/02/20/incidentsratp-pre-post-mortem/&#34; target=&#34;_blank&#34;&gt;mon ressenti&lt;/a&gt; sur toute cette affaire, mais là l&#39;histoire continue.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IncidentsRATP – Application IPhone</title>
+      <link>http://localhost:1313/posts/2011-02-28-incidentsratp-application-iphone/</link>
+      <pubDate>Sun, 27 Feb 2011 22:33:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-28-incidentsratp-application-iphone/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  On peut dire beaucoup de choses, mais pas que l&#39;on chôme. Une application IPhone développée par &lt;a title=&#34;Benoît Clouet&#34; href=&#34;http://twitter.com/benoitclouet&#34; target=&#34;_blank&#34;&gt;Benoît Clouet&lt;/a&gt; est en préparation et bientôt prête pour être testée. Nous avons beaucoup travaillé ensemble sur la communication avec l&#39;API du site, et voici un petit screencast de présentation de la version de test actuelle (&lt;em&gt;chargement un peu long&lt;/em&gt;) :&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quelques chiffres – Revue de presse</title>
+      <link>http://localhost:1313/posts/2011-02-25-quelques-chiffres-revue-de-presse/</link>
+      <pubDate>Fri, 25 Feb 2011 10:09:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-25-quelques-chiffres-revue-de-presse/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  J&#39;aime beaucoup les chiffres, mais surtout les chiffres bien utilisés. J&#39;ai eu très peu de temps à consacrer à ce blog ces derniers jours, et beaucoup de temps pris par les interviews et la communication de manière générale. C&#39;est nouveau pour moi dans le sens où pour une fois mes propos sont très largement et systématiquement déformés dans beaucoup des medias. Je ne blame personne et le message que je tenais à faire passer est &amp;#8220;globalement&amp;#8221; bien ressorti, donc je ne vais pas me plaindre.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IncidentsRATP – La lettre</title>
+      <link>http://localhost:1313/posts/2011-02-20-incidentsratp-la-lettre/</link>
+      <pubDate>Sun, 20 Feb 2011 21:02:30 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-20-incidentsratp-la-lettre/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  La, maintenant célèbre, lettre de la RATP que j&#39;ai reçu me demandant d&#39;arrêter toute activité sur &lt;a href=&#34;http://www.incidents-ratp.com&#34; target=&#34;_blank&#34;&gt;incidents-ratp.com&lt;/a&gt;. J&#39;ai bien sûr retiré toutes références aux personnes et adresses y compris le personnel de la RATP.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IncidentsRATP – pré Post-mortem</title>
+      <link>http://localhost:1313/posts/2011-02-20-incidentsratp-pre-post-mortem/</link>
+      <pubDate>Sun, 20 Feb 2011 11:04:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-20-incidentsratp-pre-post-mortem/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Depuis quelques mois je travaillais sur un projet que j&#39;avais intitulé &lt;a href=&#34;http://www.incidents-ratp.com&#34;&gt;incidents-ratp.com&lt;/a&gt; avec un but simple : mettre à disposition une plateforme libre et ouverte pour connaître les incidents en temps réels dans les transports en commun.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FOSDEM 2011 : Day #2</title>
+      <link>http://localhost:1313/posts/2011-02-12-fosdem-2011-day-2/</link>
+      <pubDate>Sat, 12 Feb 2011 10:03:52 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-12-fosdem-2011-day-2/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Principal talk de la journée - &lt;strong&gt;&lt;em&gt;Facebook messages avec HDFS/HBase&lt;/em&gt;&lt;/strong&gt; :&lt;br /&gt; Une présentation du projet de Facebook d&#39;unifié tous les messages (SMS, Email, Chat...).&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FOSDEM 2011 : Day #1</title>
+      <link>http://localhost:1313/posts/2011-02-06-fosdem-2011-day-1/</link>
+      <pubDate>Sun, 06 Feb 2011 21:31:51 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-06-fosdem-2011-day-1/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  La journée commence bien, petit déjeuner à l&#39;hôtel, et voyage vers le FOSDEM. Petite grasse matinée oblige, on loupe les premières conférences sur la liberté des logiciels et la liberté tout court pour arrivé dans un amphi gigantesque, mais surtout plein à rebord.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FOSDEM 2011 – Day 0</title>
+      <link>http://localhost:1313/posts/2011-02-05-fosdem-day-0/</link>
+      <pubDate>Sat, 05 Feb 2011 14:39:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-05-fosdem-day-0/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Vendredi soir, après une longue journée de boulot, et un petit voyage en train d&#39;1h30, rendez-vous Bruxelles pour une soirée sympa au beer event du FOSDEM 2011.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FOSDEM 2011</title>
+      <link>http://localhost:1313/posts/2011-02-03-fosdem-2011/</link>
+      <pubDate>Thu, 03 Feb 2011 12:53:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2011-02-03-fosdem-2011/</guid>
+      <description>&lt;p&gt;Le FOSDEM 2011 (Free OpenSource Developer European Meeting) aura lieu ce weekend du 5 février à Bruxelles !&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Agilité et BuildWall</title>
+      <link>http://localhost:1313/posts/2010-12-01-agilite-et-buildwall/</link>
+      <pubDate>Wed, 01 Dec 2010 16:16:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-12-01-agilite-et-buildwall/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recharger son .profile sous Linux/Mac</title>
+      <link>http://localhost:1313/posts/2010-11-30-recharger-son-profile-sous-linuxmac/</link>
+      <pubDate>Tue, 30 Nov 2010 09:27:37 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-11-30-recharger-son-profile-sous-linuxmac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Etat de l’art de la GED OpenSource</title>
+      <link>http://localhost:1313/posts/2010-11-16-etat-de-lart-de-la-ged-opensource/</link>
+      <pubDate>Tue, 16 Nov 2010 13:41:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-11-16-etat-de-lart-de-la-ged-opensource/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Extraction without semantic web</title>
+      <link>http://localhost:1313/posts/2010-11-02-data-extraction-without-semantic-web/</link>
+      <pubDate>Tue, 02 Nov 2010 21:25:06 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-11-02-data-extraction-without-semantic-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moving On…</title>
+      <link>http://localhost:1313/posts/2010-10-29-moving-on/</link>
+      <pubDate>Fri, 29 Oct 2010 18:14:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-29-moving-on/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Ca y est ! Fin de mission aujourd&#39;hui.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A good oldie : 1996 Java Vs Python</title>
+      <link>http://localhost:1313/posts/2010-10-28-a-good-oldie-1996-java-vs-python/</link>
+      <pubDate>Thu, 28 Oct 2010 21:58:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-28-a-good-oldie-1996-java-vs-python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Un hébergement qui vaut le détour : AlwaysData</title>
+      <link>http://localhost:1313/posts/2010-10-27-un-hebergement-qui-vaut-le-detour-alwaysdata/</link>
+      <pubDate>Wed, 27 Oct 2010 21:03:07 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-27-un-hebergement-qui-vaut-le-detour-alwaysdata/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Ok, ce n&#39;est très certainement pas mon domaine d&#39;expertise, mais je suis un programmeur Python, principalement sur Django et je cherche souvent un hébergement.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Combien d’applications lourdes utilisez-vous ?</title>
+      <link>http://localhost:1313/posts/2010-10-26-combien-dapplication-lourde-utilisez-vous/</link>
+      <pubDate>Tue, 26 Oct 2010 10:08:35 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-26-combien-dapplication-lourde-utilisez-vous/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fin du StartupWeekend Paris 10/2010</title>
+      <link>http://localhost:1313/posts/2010-10-12-fin-du-startupweekend-paris-102010/</link>
+      <pubDate>Tue, 12 Oct 2010 18:58:15 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-12-fin-du-startupweekend-paris-102010/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  Ca y est l&#39;édition d&#39;octobre 2010 du Startup Weekend de Paris qui c&#39;est tenu à Télécom Paris est terminée. C&#39;était ma première fois, et comme le promettait l&#39;affiche, c&#39;est clair que je reviendrais.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ce que je veux apprendre</title>
+      <link>http://localhost:1313/posts/2010-10-06-ce-que-je-veux-apprendre/</link>
+      <pubDate>Wed, 06 Oct 2010 12:45:36 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-10-06-ce-que-je-veux-apprendre/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenOffice.org is officially forked : LibreOffice 3</title>
+      <link>http://localhost:1313/posts/2010-09-28-openoffice-org-is-officially-forked-libreoffice-3/</link>
+      <pubDate>Tue, 28 Sep 2010 19:32:35 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-28-openoffice-org-is-officially-forked-libreoffice-3/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  I honestly have been waiting for this since the first day i met with Thorsten Behrens and worked with him and Eric Bachard on improving OOo Impress.&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Here’s what happens when agile methods are whispered</title>
+      <link>http://localhost:1313/posts/2010-09-22-heres-what-happens-when-agile-methods-are-whispered/</link>
+      <pubDate>Wed, 22 Sep 2010 04:46:14 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-22-heres-what-happens-when-agile-methods-are-whispered/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citation</title>
+      <link>http://localhost:1313/posts/2010-09-21-citation-3/</link>
+      <pubDate>Tue, 21 Sep 2010 10:00:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-21-citation-3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[Django] Append objects in request.session</title>
+      <link>http://localhost:1313/posts/2010-09-17-append-objects-in-request-session-in-django/</link>
+      <pubDate>Fri, 17 Sep 2010 10:00:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-17-append-objects-in-request-session-in-django/</guid>
+      <description>&lt;p&gt;This article is once again more of a reminder to me, i hope it will help everyone at the same time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De l’intégration des nouveaux arrivants</title>
+      <link>http://localhost:1313/posts/2010-09-16-de-lintegration-des-nouveaux-arrivants/</link>
+      <pubDate>Thu, 16 Sep 2010 12:00:55 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-16-de-lintegration-des-nouveaux-arrivants/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>De la différence entre innovations</title>
+      <link>http://localhost:1313/posts/2010-09-15-de-la-difference-entre-innovations/</link>
+      <pubDate>Wed, 15 Sep 2010 12:00:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-15-de-la-difference-entre-innovations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citation</title>
+      <link>http://localhost:1313/posts/2010-09-14-citation-2/</link>
+      <pubDate>Tue, 14 Sep 2010 14:00:01 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-14-citation-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Paris Startup Weekend  8-10 Octobre 2010</title>
+      <link>http://localhost:1313/posts/2010-09-13-paris-startup-weekend-8-10-octobre-2010/</link>
+      <pubDate>Mon, 13 Sep 2010 14:00:14 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-13-paris-startup-weekend-8-10-octobre-2010/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekend…</title>
+      <link>http://localhost:1313/posts/2010-09-12-weekend/</link>
+      <pubDate>Sun, 12 Sep 2010 17:00:30 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-12-weekend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Citation</title>
+      <link>http://localhost:1313/posts/2010-09-10-citation/</link>
+      <pubDate>Fri, 10 Sep 2010 14:00:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-10-citation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comment créer des sous-formulaires à partir d’un Model Django</title>
+      <link>http://localhost:1313/posts/2010-09-09-comment-creer-des-sous-formulaires-a-partir-dun-model-django/</link>
+      <pubDate>Thu, 09 Sep 2010 10:00:53 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-09-comment-creer-des-sous-formulaires-a-partir-dun-model-django/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evitons Javascript</title>
+      <link>http://localhost:1313/posts/2010-09-08-evitons-javascript/</link>
+      <pubDate>Wed, 08 Sep 2010 10:00:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-08-evitons-javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Autodidactes en informatique</title>
+      <link>http://localhost:1313/posts/2010-09-07-autodidactes-en-informatique/</link>
+      <pubDate>Tue, 07 Sep 2010 19:36:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-07-autodidactes-en-informatique/</guid>
+      <description>&lt;p style=&#34;text-align:justify;&#34;&gt;&#xA;  S&#39;il y a bien une constante que je retrouve à travers toutes mes expériences professionnelles, c&#39;est qu&#39;on vient bien de partout pour finir dans l&#39;informatique. Je m&#39;explique :&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Création de modèles avec PySide/PyQt</title>
+      <link>http://localhost:1313/posts/2010-09-05-creation-de-modeles-avec-pysidepyqt/</link>
+      <pubDate>Sun, 05 Sep 2010 10:34:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-09-05-creation-de-modeles-avec-pysidepyqt/</guid>
+      <description>&lt;p&gt;Ça y est ! mon dernier article sur développez.com est terminé, relu, vérifié, contre-vérifié etc.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction et prise en main de PyQt/PySide</title>
+      <link>http://localhost:1313/posts/2010-08-26-introduction-et-prise-en-main-de-pyqtpyside/</link>
+      <pubDate>Thu, 26 Aug 2010 12:34:06 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-08-26-introduction-et-prise-en-main-de-pyqtpyside/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MultiThreaded Test cases – Why ? How ? and What’s for dinner ?</title>
+      <link>http://localhost:1313/posts/2010-08-14-multithreaded-test-cases-why-how-and-whats-for-dinner/</link>
+      <pubDate>Fri, 13 Aug 2010 22:53:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-08-14-multithreaded-test-cases-why-how-and-whats-for-dinner/</guid>
+      <description>&lt;p&gt;Okay so to make a small introduction (i promise a tiny one) i&amp;rsquo;m starting to contribute into &lt;a title=&#34;Virgo OSGi Runtime&#34; href=&#34;http://www.eclipse.org/virgo/&#34; target=&#34;_blank&#34;&gt;VirgoRT&lt;/a&gt; (ex-SpringSource DM Server) for me it&amp;rsquo;s an opportunity to work with great people, learn more about OSGi and work on a real JEE application server (and more).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Building Virgo on MacOsX Leopard</title>
+      <link>http://localhost:1313/posts/2010-07-28-building-virgo-on-macosx-leopard/</link>
+      <pubDate>Wed, 28 Jul 2010 20:50:32 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-07-28-building-virgo-on-macosx-leopard/</guid>
+      <description>&lt;p&gt;I won&amp;rsquo;t say that my contribution to this work will be tremendous, but it&amp;rsquo;s nice to know a little more if you want to try out building the ex SpringSource DM Server&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blog au(tour) du monde</title>
+      <link>http://localhost:1313/posts/2010-04-06-blog-autour-du-monde/</link>
+      <pubDate>Tue, 06 Apr 2010 13:55:27 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-04-06-blog-autour-du-monde/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>It’s like that – always the communists’ way</title>
+      <link>http://localhost:1313/posts/2010-03-23-its-like-that-always-the-communists-way/</link>
+      <pubDate>Tue, 23 Mar 2010 20:46:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-23-its-like-that-always-the-communists-way/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine-learning empowerment – Apache Mahoot</title>
+      <link>http://localhost:1313/posts/2010-03-23-machine-learning-empowerment-apache-mahoot/</link>
+      <pubDate>Tue, 23 Mar 2010 08:32:12 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-23-machine-learning-empowerment-apache-mahoot/</guid>
+      <description>&lt;p&gt;Maybe we&amp;rsquo;ll soon be able to get more out of machine learning algorithms, Google is communicating a lot, throught the &lt;em&gt;GSOC&lt;/em&gt; (Google Summer of Code) and Google Code as a whole, on this project and supporting the Apache foundation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Self-Improvement : Refactor my code !!</title>
+      <link>http://localhost:1313/posts/2010-03-16-self-improvement-refactor-my-code/</link>
+      <pubDate>Tue, 16 Mar 2010 08:08:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-16-self-improvement-refactor-my-code/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Don’t forget to subscribe !</title>
+      <link>http://localhost:1313/posts/2010-03-15-dont-forget-to-subscribe/</link>
+      <pubDate>Mon, 15 Mar 2010 18:54:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-15-dont-forget-to-subscribe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Improvement : [Java] – Weak references (Soft/Phantom)</title>
+      <link>http://localhost:1313/posts/2010-03-15-self-improvement-java-weak-references-softphantom/</link>
+      <pubDate>Mon, 15 Mar 2010 10:14:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-15-self-improvement-java-weak-references-softphantom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>That’s official – Be Stupid</title>
+      <link>http://localhost:1313/posts/2010-03-10-thats-official-be-stupid/</link>
+      <pubDate>Wed, 10 Mar 2010 05:33:12 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-03-10-thats-official-be-stupid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Improvement : [Java] – ClassLoading in depth</title>
+      <link>http://localhost:1313/posts/2010-02-28-self-improvement-java-classloading-in-depth/</link>
+      <pubDate>Sun, 28 Feb 2010 21:46:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-02-28-self-improvement-java-classloading-in-depth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>That’s when your dream comes true…</title>
+      <link>http://localhost:1313/posts/2010-01-09-thats-when-your-dream-comes-true/</link>
+      <pubDate>Sat, 09 Jan 2010 20:00:14 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2010-01-09-thats-when-your-dream-comes-true/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sur le site d’une grande banque…</title>
+      <link>http://localhost:1313/posts/2009-12-09-sur-le-site-dune-grande-banque/</link>
+      <pubDate>Wed, 09 Dec 2009 05:30:37 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-12-09-sur-le-site-dune-grande-banque/</guid>
+      <description>&lt;p&gt;voilà ce qu&amp;rsquo;on pourrait trouver, alors qu&amp;rsquo;on essaye sans succès sur une page Web de changer son mot de passe :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>One more down, many to go…</title>
+      <link>http://localhost:1313/posts/2009-12-05-one-more-down-many-to-go/</link>
+      <pubDate>Sat, 05 Dec 2009 13:28:40 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-12-05-one-more-down-many-to-go/</guid>
+      <description>&lt;p&gt;After the court decision about thePirateBay, now it&amp;rsquo;s the time to be sad for Mininova,&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Just because i haven’t done anything lately…</title>
+      <link>http://localhost:1313/posts/2009-12-01-just-because-i-havent-done-anything-lately/</link>
+      <pubDate>Tue, 01 Dec 2009 15:40:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-12-01-just-because-i-havent-done-anything-lately/</guid>
+      <description>&lt;p&gt;and because i&amp;rsquo;m deep into the last parts of a new release (for my job), here&amp;rsquo;s a little thought i&amp;rsquo;d love to share :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Metasploit is Rising</title>
+      <link>http://localhost:1313/posts/2009-11-23-metasploit-is-rising/</link>
+      <pubDate>Mon, 23 Nov 2009 11:58:07 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-23-metasploit-is-rising/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Petite pause japonaise</title>
+      <link>http://localhost:1313/posts/2009-11-22-petite-pause-japonaise/</link>
+      <pubDate>Sun, 22 Nov 2009 12:23:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-22-petite-pause-japonaise/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Le paradoxe de l’analyste programmeur ?</title>
+      <link>http://localhost:1313/posts/2009-11-18-le-paradoxe-de-lanalyste-programmeur/</link>
+      <pubDate>Wed, 18 Nov 2009 07:30:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-18-le-paradoxe-de-lanalyste-programmeur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Useful Tips : StringBuilder and Java String Concatenation</title>
+      <link>http://localhost:1313/posts/2009-11-14-useful-tips-stringbuilder-and-java-string-concatenation/</link>
+      <pubDate>Sat, 14 Nov 2009 05:30:22 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-14-useful-tips-stringbuilder-and-java-string-concatenation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Enfin la réponse à l’ultime question…</title>
+      <link>http://localhost:1313/posts/2009-11-11-enfin-la-reponse-a-lultime-question/</link>
+      <pubDate>Wed, 11 Nov 2009 05:30:23 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-11-enfin-la-reponse-a-lultime-question/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Internet comme substitut aux relations humaines</title>
+      <link>http://localhost:1313/posts/2009-11-08-internet-comme-substitut-aux-relations-humaines/</link>
+      <pubDate>Sun, 08 Nov 2009 05:30:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-08-internet-comme-substitut-aux-relations-humaines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unfinished business… and decision making</title>
+      <link>http://localhost:1313/posts/2009-11-02-unfinished-business-and-decision-making/</link>
+      <pubDate>Mon, 02 Nov 2009 05:30:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-11-02-unfinished-business-and-decision-making/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design Pattern : Proxy</title>
+      <link>http://localhost:1313/posts/2009-10-30-design-pattern-proxy/</link>
+      <pubDate>Fri, 30 Oct 2009 05:30:36 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-30-design-pattern-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced use of Eclipse for Java</title>
+      <link>http://localhost:1313/posts/2009-10-27-advanced-use-of-eclipse-for-java/</link>
+      <pubDate>Tue, 27 Oct 2009 07:00:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-27-advanced-use-of-eclipse-for-java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Barry Schwartz : On the paradox of choice</title>
+      <link>http://localhost:1313/posts/2009-10-24-barry-schwartz-on-the-paradox-of-choice/</link>
+      <pubDate>Sat, 24 Oct 2009 07:00:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-24-barry-schwartz-on-the-paradox-of-choice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Une leçon pour Alain Finkielkraut sur Internet</title>
+      <link>http://localhost:1313/posts/2009-10-21-une-lecon-pour-alain-finkielkraut-sur-internet/</link>
+      <pubDate>Wed, 21 Oct 2009 07:00:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-21-une-lecon-pour-alain-finkielkraut-sur-internet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Did you know ?</title>
+      <link>http://localhost:1313/posts/2009-10-19-did-you-know/</link>
+      <pubDate>Mon, 19 Oct 2009 07:00:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-19-did-you-know/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Looking for thesis and inspired science ?</title>
+      <link>http://localhost:1313/posts/2009-10-16-looking-for-thesis-and-inspired-science/</link>
+      <pubDate>Fri, 16 Oct 2009 07:00:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-16-looking-for-thesis-and-inspired-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google.com is a …. spell checker !?</title>
+      <link>http://localhost:1313/posts/2009-10-13-google-com-is-a-spell-checker/</link>
+      <pubDate>Tue, 13 Oct 2009 07:00:19 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-13-google-com-is-a-spell-checker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>To discover : School Food Punishment</title>
+      <link>http://localhost:1313/posts/2009-10-08-to-discover-school-food-punishment/</link>
+      <pubDate>Thu, 08 Oct 2009 19:24:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-08-to-discover-school-food-punishment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Better web applications</title>
+      <link>http://localhost:1313/posts/2009-10-02-better-web-applications/</link>
+      <pubDate>Fri, 02 Oct 2009 09:42:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-10-02-better-web-applications/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NoLife-TV : Y’a pas que la vraie vie dans la vie</title>
+      <link>http://localhost:1313/posts/2009-09-29-nolife-tv-ya-pas-que-la-vraie-vie-dans-la-vie/</link>
+      <pubDate>Tue, 29 Sep 2009 19:08:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-29-nolife-tv-ya-pas-que-la-vraie-vie-dans-la-vie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>If architects had to work like software developers</title>
+      <link>http://localhost:1313/posts/2009-09-26-if-architects-had-to-work-like-software-developers/</link>
+      <pubDate>Sat, 26 Sep 2009 07:02:36 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-26-if-architects-had-to-work-like-software-developers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New moto ? : Be Nice or Leave</title>
+      <link>http://localhost:1313/posts/2009-09-23-new-moto-be-nice-or-leave/</link>
+      <pubDate>Wed, 23 Sep 2009 16:56:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-23-new-moto-be-nice-or-leave/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design Pattern : Singleton</title>
+      <link>http://localhost:1313/posts/2009-09-06-design-pattern-singleton/</link>
+      <pubDate>Sun, 06 Sep 2009 08:29:22 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-06-design-pattern-singleton/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A découvrir Tokyo Magnitude 8.0</title>
+      <link>http://localhost:1313/posts/2009-09-05-a-decouvrir-tokyo-magnitude-8-0/</link>
+      <pubDate>Sat, 05 Sep 2009 20:27:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-05-a-decouvrir-tokyo-magnitude-8-0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expression régulières Vs State Machines</title>
+      <link>http://localhost:1313/posts/2009-09-05-expression-regulieres-vs-state-machines/</link>
+      <pubDate>Sat, 05 Sep 2009 15:00:25 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-05-expression-regulieres-vs-state-machines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Précis de SQL : utilisation de “Minus”</title>
+      <link>http://localhost:1313/posts/2009-09-05-precis-de-sql-utilisation-de-minus/</link>
+      <pubDate>Sat, 05 Sep 2009 12:26:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-09-05-precis-de-sql-utilisation-de-minus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alors qu’il fait chaud…</title>
+      <link>http://localhost:1313/posts/2009-08-22-alors-quil-fait-chaud/</link>
+      <pubDate>Sat, 22 Aug 2009 18:15:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-08-22-alors-quil-fait-chaud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rebuild of Evangelion dévoile son deuxième épisode</title>
+      <link>http://localhost:1313/posts/2009-07-18-rebuild-of-evangelion-devoile-son-deuxieme-episode/</link>
+      <pubDate>Sat, 18 Jul 2009 09:20:15 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-07-18-rebuild-of-evangelion-devoile-son-deuxieme-episode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modélisation de la C.A.F par des Threads asynchrones</title>
+      <link>http://localhost:1313/posts/2009-07-18-modelisation-de-la-c-a-f-par-des-threads-asynchrones/</link>
+      <pubDate>Fri, 17 Jul 2009 22:29:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-07-18-modelisation-de-la-c-a-f-par-des-threads-asynchrones/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cheat sheet for vim/gVim</title>
+      <link>http://localhost:1313/posts/2009-07-09-cheat-sheet-for-vimgvim/</link>
+      <pubDate>Thu, 09 Jul 2009 19:59:22 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-07-09-cheat-sheet-for-vimgvim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RMLL’09, OpenOffice.org, LOPSI/HADOPI et le futur</title>
+      <link>http://localhost:1313/posts/2009-07-09-rmll09-openoffice-org-lopsihadopi-et-le-futur/</link>
+      <pubDate>Thu, 09 Jul 2009 16:45:39 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-07-09-rmll09-openoffice-org-lopsihadopi-et-le-futur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>English report of the OpenOffice.org project : The Eraser</title>
+      <link>http://localhost:1313/posts/2009-07-02-english-report-of-the-openoffice-org-project-the-eraser/</link>
+      <pubDate>Thu, 02 Jul 2009 09:15:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-07-02-english-report-of-the-openoffice-org-project-the-eraser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Useful tips : Insert a clob of more than 4k into database</title>
+      <link>http://localhost:1313/posts/2009-06-25-117/</link>
+      <pubDate>Thu, 25 Jun 2009 10:03:39 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-25-117/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RMLL 2009 – OpenOffice.org and OpenSource lectures</title>
+      <link>http://localhost:1313/posts/2009-06-23-rmll-2009-openoffice-org-and-opensource-lectures/</link>
+      <pubDate>Tue, 23 Jun 2009 16:37:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-23-rmll-2009-openoffice-org-and-opensource-lectures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction aux produits structurés</title>
+      <link>http://localhost:1313/posts/2009-06-22-introduction-aux-produits-structures/</link>
+      <pubDate>Mon, 22 Jun 2009 21:25:05 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-22-introduction-aux-produits-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java Web start/JNLP and file access from within</title>
+      <link>http://localhost:1313/posts/2009-06-22-java-web-startjnlp-and-file-access-from-within/</link>
+      <pubDate>Mon, 22 Jun 2009 20:42:35 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-22-java-web-startjnlp-and-file-access-from-within/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New blog and Macbook Air review after 5 months</title>
+      <link>http://localhost:1313/posts/2009-06-21-new-blog-and-macbook-air-review-after-5-months/</link>
+      <pubDate>Sun, 21 Jun 2009 10:37:57 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-21-new-blog-and-macbook-air-review-after-5-months/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Useful Tips : How to create a thread that must get a result with a timeout time</title>
+      <link>http://localhost:1313/posts/2009-06-09-useful-tips-how-to-create-a-thread-that-must-get-a-result-with-a-timeout-time/</link>
+      <pubDate>Tue, 09 Jun 2009 16:41:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-09-useful-tips-how-to-create-a-thread-that-must-get-a-result-with-a-timeout-time/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Les élections européennes ne passionnent pas la télévision, peu importe</title>
+      <link>http://localhost:1313/posts/2009-06-07-les-elections-europeennes-ne-passionnent-pas-la-television-peu-importe/</link>
+      <pubDate>Sun, 07 Jun 2009 16:26:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-07-les-elections-europeennes-ne-passionnent-pas-la-television-peu-importe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Useful Tips : How to insert BLOB into an Oracle database using JDBC</title>
+      <link>http://localhost:1313/posts/2009-06-05-useful-tips-how-to-insert-blob-into-an-oracle-database-using-jdbc/</link>
+      <pubDate>Fri, 05 Jun 2009 17:19:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-05-useful-tips-how-to-insert-blob-into-an-oracle-database-using-jdbc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Useful Tips : How to find the biggest files on a unix system ?</title>
+      <link>http://localhost:1313/posts/2009-06-03-useful-tips-how-to-find-the-biggest-files-on-a-unix-system/</link>
+      <pubDate>Wed, 03 Jun 2009 10:35:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-03-useful-tips-how-to-find-the-biggest-files-on-a-unix-system/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Args4j ou de l’utilisation de Java pour faire des Batchs</title>
+      <link>http://localhost:1313/posts/2009-06-02-args4j-ou-de-lutilisation-de-java-pour-faire-des-batchs/</link>
+      <pubDate>Tue, 02 Jun 2009 17:09:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-06-02-args4j-ou-de-lutilisation-de-java-pour-faire-des-batchs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Déformation professionnelles en Informatique comme ailleurs</title>
+      <link>http://localhost:1313/posts/2009-05-28-deformation-professionnelles-en-informatique-comme-ailleurs/</link>
+      <pubDate>Thu, 28 May 2009 16:29:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-05-28-deformation-professionnelles-en-informatique-comme-ailleurs/</guid>
+      <description>&lt;p&gt;La déformation professionnelle est un concept, il faut bien l&amp;rsquo;avoué, typiquement français qui consiste à dire qu&amp;rsquo;un professionnel verra toujours sa vision du monde influencée par le type de travail qu&amp;rsquo;il réalise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Langage de programmation : Comme si les performances comptaient …</title>
+      <link>http://localhost:1313/posts/2009-05-13-langage-de-programmation-comme-si-les-performances-comptaient/</link>
+      <pubDate>Wed, 13 May 2009 19:42:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-05-13-langage-de-programmation-comme-si-les-performances-comptaient/</guid>
+      <description>&lt;p&gt;Comme j&amp;rsquo;anticipe le gros troll qui pourrait découler d&amp;rsquo;un tel titre, je vais préciser ma pensée : Je ne veux pas dire qu&amp;rsquo;il ne faut pas optimiser son code autant que faire se peut et qu&amp;rsquo;il n&amp;rsquo;est pas nécessaire de toujours réfléchir au plus performant.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lire un Dvd sous Ubuntu – Cas d’école de piratage</title>
+      <link>http://localhost:1313/posts/2009-05-03-lire-un-dvd-sous-ubuntu-cas-decole-de-piratage/</link>
+      <pubDate>Sun, 03 May 2009 18:31:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-05-03-lire-un-dvd-sous-ubuntu-cas-decole-de-piratage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Petit tour à Luxembourg Ville – Canards et paysages</title>
+      <link>http://localhost:1313/posts/2009-04-25-petit-tour-a-luxembourg-ville-canards-et-paysages/</link>
+      <pubDate>Sat, 25 Apr 2009 17:03:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-04-25-petit-tour-a-luxembourg-ville-canards-et-paysages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>La fusion Oracle – Sun signera-t-elle la fin des conflits entre Eclipse et Netbeans ?</title>
+      <link>http://localhost:1313/posts/2009-04-23-la-fusion-oracle-sun-signera-t-elle-la-fin-des-conflits-entre-eclipse-et-netbeans/</link>
+      <pubDate>Thu, 23 Apr 2009 18:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-04-23-la-fusion-oracle-sun-signera-t-elle-la-fin-des-conflits-entre-eclipse-et-netbeans/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introduction au langage Natural et problematiques de migration vers Java</title>
+      <link>http://localhost:1313/posts/2009-04-23-introduction-au-langage-natural-et-problematiques-de-migration-vers-java/</link>
+      <pubDate>Thu, 23 Apr 2009 16:42:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-04-23-introduction-au-langage-natural-et-problematiques-de-migration-vers-java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Petit précis de Luxembourgeois</title>
+      <link>http://localhost:1313/posts/2009-04-22-petit-precis-de-luxembourgeois/</link>
+      <pubDate>Wed, 22 Apr 2009 18:06:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-04-22-petit-precis-de-luxembourgeois/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Symfony, sfPropelPager et passage de variables</title>
+      <link>http://localhost:1313/posts/2009-03-21-symfony-sfpropelpager-et-passage-de-variables/</link>
+      <pubDate>Sat, 21 Mar 2009 22:13:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-21-symfony-sfpropelpager-et-passage-de-variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Petits bugs entre amis …</title>
+      <link>http://localhost:1313/posts/2009-03-17-petits-bugs-entre-amis/</link>
+      <pubDate>Tue, 17 Mar 2009 19:19:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-17-petits-bugs-entre-amis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comment detruire Skynet ??</title>
+      <link>http://localhost:1313/posts/2009-03-10-comment-detruire-skynet/</link>
+      <pubDate>Tue, 10 Mar 2009 07:51:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-10-comment-detruire-skynet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TCP/IP – Rudiments d’analyse de paquets et d’intrusions</title>
+      <link>http://localhost:1313/posts/2009-03-09-tcpip-rudiments-danalyse-de-paquets-et-dintrusions/</link>
+      <pubDate>Mon, 09 Mar 2009 19:47:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-09-tcpip-rudiments-danalyse-de-paquets-et-dintrusions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Validateur de code SIREN pour symfony</title>
+      <link>http://localhost:1313/posts/2009-03-04-validateur-de-code-siren-pour-symfony/</link>
+      <pubDate>Wed, 04 Mar 2009 20:20:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-04-validateur-de-code-siren-pour-symfony/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Faire un “Select DISTINCT …” sous Symfony avec Propel</title>
+      <link>http://localhost:1313/posts/2009-03-03-faire-un-select-distinct-sous-symfony-avec-propel/</link>
+      <pubDate>Tue, 03 Mar 2009 07:10:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-03-03-faire-un-select-distinct-sous-symfony-avec-propel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finding a way to compile OpenOffice.org</title>
+      <link>http://localhost:1313/posts/2009-02-26-finding-a-way-to-compile-openoffice-org/</link>
+      <pubDate>Thu, 26 Feb 2009 18:17:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-26-finding-a-way-to-compile-openoffice-org/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compiling OpenOffice.org under MacOs and Linux (Part 2)</title>
+      <link>http://localhost:1313/posts/2009-02-08-compiling-openoffice-org-under-macos-and-linux-part-2/</link>
+      <pubDate>Sun, 08 Feb 2009 14:52:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-08-compiling-openoffice-org-under-macos-and-linux-part-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Compiling OpenOffice.org under MacOs and Linux (Part 1)</title>
+      <link>http://localhost:1313/posts/2009-02-07-compiling-openoffice-org-under-macos-and-linux-part-1/</link>
+      <pubDate>Sat, 07 Feb 2009 16:46:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-07-compiling-openoffice-org-under-macos-and-linux-part-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Accentuate, KeyJnote under MacOs</title>
+      <link>http://localhost:1313/posts/2009-02-04-accentuate-keyjnote-under-macos/</link>
+      <pubDate>Wed, 04 Feb 2009 12:18:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-04-accentuate-keyjnote-under-macos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacBook Air review after a month</title>
+      <link>http://localhost:1313/posts/2009-02-04-macbook-air-review-after-a-month/</link>
+      <pubDate>Wed, 04 Feb 2009 08:49:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-04-macbook-air-review-after-a-month/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Migration d’un projet Symfony 1.0 vers 1.2</title>
+      <link>http://localhost:1313/posts/2009-02-01-migration-dun-projet-symfony-1-0-vers-1-2/</link>
+      <pubDate>Sun, 01 Feb 2009 19:45:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-01-migration-dun-projet-symfony-1-0-vers-1-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Création du Blog</title>
+      <link>http://localhost:1313/posts/2009-02-01-creation-du-blog/</link>
+      <pubDate>Sun, 01 Feb 2009 19:28:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2009-02-01-creation-du-blog/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
-
