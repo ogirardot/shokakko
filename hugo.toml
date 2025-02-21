@@ -27,7 +27,7 @@ unsafe= true
     url = "about"
 
 [params]
-footerHtml = 'CC-0, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
+footerHtml = 'CC-0, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme <script defer async src="https://tracker.blogtally.com/blogtally.min.js" data-site="407d5903-3398-4e8b-afae-cdbd24bf6da5" data-link-tracking="true" />'
 user = "ogirardot"
 hostname = "readtfb.com"
 sitedescription = 'Olivier Girardot personal blog'
