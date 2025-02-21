@@ -1,4 +1,4 @@
-baseURL = 'https://www.shokakko.com/'
+baseURL = 'https://shokakko.com/'
 languageCode = 'en-us'
 title = "Shokakko"
 createdBy = "Olivier Girardot"
@@ -8,22 +8,55 @@ createdBy = "Olivier Girardot"
     disable = false
     ignoreConfig = false
     ignoreImports = true
-    path = "github.com/brianreumere/plague"  # Theme
+    path = "github.com/LordMathis/hugo-theme-nightfall"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[frontmatter]
+#date = [':filename', ':default']
+
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "/posts"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
 
 [params]
-  siteHeaderText = "Olivier Girardot's Tech Blog"
-  siteFooterText = "Powered by [Hugo](https://gohugo.io/) and the [plague](https://github.com/brianreumere/plague) theme."
-  [params.hcard]
-    fullName = "Olivier Girardot"
-    showLocation = false
-    city = "Paris"
-    region = "IDF"
-    country = "FR"
+footerHtml = 'CC-0, Built with <a href="https://gohugo.io" class="footerLink">Hugo</a> and <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme'
+user = "ogirardot"
+hostname = "readtfb.com"
+sitedescription = 'Olivier Girardot personal blog'
 
-    social = [
-      { platform = "github", identity = "ogirardot", url_pattern = "https://github.com/%s" },
-      { platform = "linkedin", identity = "oliviergirardot", url_pattern = "https://www.linkedin.com/in/%s" },
-      { platform = "website", identity = "shokakko", url_pattern = "https://www.shokakko.com" },
-      { platform = "bluesky", identity = "ogirardot", url_pattern = "https://bsky.app/profile/%s" }
-    ]
+[params.author]
+name = "Olivier Girardot"  # Website and RSS feed author
 
+[params.styles]
+color = "orange"
+
+readingTime = true  # Show reading time on post page
+published = true  # Show published data on post page
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/ogirardot"
+target = "_blank"
+aria = "GitHub Profile"
+
+[[params.social]]
+key = 1
+name = "bluesky"
+url = "https://bsky.app/profile/ogirardot"
+aria = "Bluesky Profile"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.linkedin.com/in/oliviergirardot"
+aria = "LinkedIn Profile"
+  
