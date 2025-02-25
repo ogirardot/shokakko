@@ -19,9 +19,9 @@ tags:
 ---
 
 I have been the CTO of Arkhn for two years now, during this time we've been building the best data platform to empower healthcare providers, make better decisions and improve patient outcomes.
+<!--more-->
 
 Today I am proud to announce that we are crossing a step forward in our journey by announcing the support of the [Model Context Protocol](https://modelcontextprotocol.io/) with a server implementation that will allow LLMs and Agents to access all the data in our platform without any compromise on security or sovereignty giving the Hospitals new tools to interact and gain insights to improve patient care.
-<!--more-->
 
 # What is the Model Context Protocol ?
 
