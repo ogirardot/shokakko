@@ -1,6 +1,6 @@
 baseURL = 'https://shokakko.com/'
 languageCode = 'en-us'
-title = "Shokakko"
+title = "ReadTFB"
 createdBy = "Olivier Girardot"
 
 [module]
@@ -11,7 +11,7 @@ createdBy = "Olivier Girardot"
     path = "github.com/LordMathis/hugo-theme-nightfall"
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
 
 [frontmatter]
 #date = [':filename', ':default']
@@ -31,6 +31,7 @@ footerHtml = 'CC-0, Built with <a href="https://gohugo.io" class="footerLink">Hu
 user = "ogirardot"
 hostname = "readtfb.com"
 sitedescription = 'Olivier Girardot personal blog'
+sitename = "ReadTFB | Olivier Girardot"
 
 [params.author]
 name = "Olivier Girardot"  # Website and RSS feed author
@@ -59,4 +60,15 @@ key = 2
 name = "linkedin"
 url = "https://www.linkedin.com/in/oliviergirardot"
 aria = "LinkedIn Profile"
+
+# Add these settings for image handling
+[imaging]
+quality = 75
+resampleFilter = "Lanczos"
+
+[security]
+enableInlineShortcodes = true
+
+[security.funcs]
+getenv = ['^HUGO_']
   
