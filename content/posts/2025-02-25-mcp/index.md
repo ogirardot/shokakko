@@ -55,7 +55,7 @@ We are now ready to take a step back and give the power to the users to interact
 
 * The introduction of the [MCP](https://modelcontextprotocol.io/) by Anthropic to standardize the way agents/LLMs can access and interact with external tools and data sources was a great news for us as we have always promoted interoperability formats like FHIR and OMOP
 * But more recently the [new draft specification of the MCP protocol](https://spec.modelcontextprotocol.io/specification/draft/basic/authorization/) to add [support for fine-grained access control](https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/1.6.0) was a game changer for us as it is crucial for us to give access to data knowing which user called and what data they can access.
-* Finally the growing support of the MCP protocol amongst the GenAI community for example in the LangChain ecosystem with the [LangChain MCP Adapter]("https://github.com/langchain-ai/langchain-mcp-adapters"), [LangChain4j MCP](https://docs.langchain4j.dev/tutorials/mcp/), [LangGraph](https://www.youtube.com/watch?v=OX89LkTvNKQ) or for the end-user with [Claude Desktop support](https://modelcontextprotocol.io/quickstart/user), [CursorAI support](https://docs.cursor.com/context/model-context-protocol) and [Cline](https://github.com/cline/mcp-marketplace) to name a few.
+* Finally the growing support of the MCP protocol amongst the GenAI community for example in the LangChain ecosystem with the [LangChain MCP Adapter](https://github.com/langchain-ai/langchain-mcp-adapters), [LangChain4j MCP](https://docs.langchain4j.dev/tutorials/mcp/), [LangGraph](https://www.youtube.com/watch?v=OX89LkTvNKQ) or for the end-user with [Claude Desktop support](https://modelcontextprotocol.io/quickstart/user), [CursorAI support](https://docs.cursor.com/context/model-context-protocol) and [Cline](https://github.com/cline/mcp-marketplace) to name a few.
 
 # MCP integrations examples
 We decided to expose the Data Platform using both Tools & Resource Templates because most of the products supporting MCP Servers are not yet supporting Resources & Resources Templates as a rule.
@@ -74,6 +74,7 @@ On the other hand, Cline is a VSCode extension that supports both Resources/Reso
     alt="Cline - Arkhn MCP Server integration example" 
     title="Cline <=> Arkhn" 
     loading="lazy"
+    link="images/cline-arkhn.png"
     >}}
 
 Finally Cursor.ai relies on Tools just as much for now.
@@ -81,6 +82,7 @@ Finally Cursor.ai relies on Tools just as much for now.
       alt="Cursor.ai - Arkhn MCP Server integration example" 
       title="Cursor.ai <=> Arkhn" 
       loading="lazy"
+      link="images/cursor-arkhn.png"
       >}}
 
 <style>
